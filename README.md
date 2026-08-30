@@ -1,35 +1,51 @@
-# Muhakem Legal AI — Public Showcase
+# Muhakem Legal AI | مُحكِّم للذكاء الاصطناعي القانوني
 
-Muhakem is an Arabic legal-AI workspace designed to help legal professionals research Egyptian law, draft contracts and defense memoranda, and review legal documents with traceable references.
+**مُحكِّم** منصة عربية للذكاء الاصطناعي القانوني تساعد المتخصصين في البحث القانوني، وإنشاء العقود، وإعداد مذكرات الدفاع، ومراجعة المستندات القانونية مع إظهار المراجع ذات الصلة.
 
-> This repository is a presentation-only showcase. The full application source, backend, legal corpus, user data, model files, credentials, and private implementation are intentionally excluded.
+> هذا المستودع نسخة عرض عامة فقط. الكود الكامل للمنصة، والـBackend، وقاعدة البيانات القانونية، وبيانات المستخدمين، ومفاتيح الخدمات، وملفات النماذج محفوظة في مستودع خاص وغير موجودة هنا.
 
-## What the project demonstrates
+## فكرة المشروع
 
-| Capability | Demonstration |
+تجمع المنصة بين فهم اللغة العربية، والاسترجاع المعزز بالتوليد، ومعالجة المستندات، وتجربة عمل واحدة موجهة للمحامي والباحث القانوني. الهدف هو تقليل الوقت اللازم للوصول إلى المعلومة وصياغة المستند، مع الحفاظ على إمكانية مراجعة المصدر وعدم تقديم النص المولد باعتباره رأيًا قانونيًا نهائيًا.
+
+## المسارات الرئيسية
+
+| المسار | الوظيفة |
 | --- | --- |
-| Arabic legal consultation | Conversational legal research grounded in retrieved legal material. |
-| Contract generation | Structured drafting with clause-level refinement. |
-| Defense-memo drafting | Organized memoranda built from facts, defenses, evidence, and requests. |
-| Contract review | OCR-assisted extraction, clause analysis, legal references, and confidence indicators. |
-| Usage analytics | Token counts, latency, operation breakdown, and estimated cloud-cost comparison. |
+| الاستشارة القانونية | طرح أسئلة قانونية باللغة العربية والحصول على إجابة منظمة مبنية على النصوص المسترجعة. |
+| إنشاء العقود | إنشاء عقد منظم وإضافة البنود أو تعديلها أو حذفها من خلال مساعد تفاعلي. |
+| إعداد مذكرة دفاع | تحويل الوقائع والأدلة والدفوع والطلبات إلى مذكرة دفاع قابلة للمراجعة. |
+| مراجعة العقد | استخراج البنود وتحليلها وإظهار المراجع ومؤشرات الثقة والتنبيهات. |
+| مراقبة الاستخدام | تسجيل عدد التوكنز، وزمن الاستجابة، وتقسيم الاستخدام، والتكلفة السحابية التقديرية. |
 
-## Research and engineering focus
+## ما الذي يوضحه الـDemo؟
 
-The project explores a privacy-conscious architecture for legal AI. It separates retrieval, generation, document processing, and presentation so that deployment can move between online, hybrid, and local environments without redesigning the user experience.
+يوضح العرض العام شكل المنتج وفكرته ومساراته الأساسية فقط. البيانات المستخدمة خيالية، والصفحة ثابتة ولا تتصل بقاعدة بيانات أو نموذج ذكاء اصطناعي أو مستندات مستخدمين.
 
-## Demo
+يمكن فتح العرض من ملف [`index.html`](./index.html) مباشرة، أو استخدام نسخة GitHub Pages بعد تفعيلها من إعدادات المستودع.
 
-Open [`index.html`](./index.html) locally, or use the GitHub Pages deployment when enabled. The demo is intentionally static and uses fictional examples. It does not connect to a production backend and does not process confidential legal documents.
+## الجانب البحثي والهندسي
 
-## Privacy
+يعتمد التصميم على فصل طبقات الواجهة، والـAPI، والاسترجاع، والتوليد، ومعالجة المستندات. ويسمح هذا الفصل بتشغيل المنصة في وضع Online أو Hybrid أو Local دون إعادة تصميم تجربة المستخدم.
 
-Do not upload or commit API keys, `.env` files, legal documents, user records, SQLite databases, vector databases, OCR caches, model weights, or private source code to this showcase repository.
+```text
+واجهة React
+    ↓
+FastAPI API
+    ↓
+استرجاع قانوني + نموذج لغوي + معالجة مستندات
+    ↓
+إجابة أو مستند منظم مع مراجع
+```
 
-## Private source repository
+## الخصوصية والأمان
 
-The full implementation is maintained separately in a private repository. Access is intentionally restricted while the project is under development and evaluation.
+لا ترفعي إلى هذا المستودع أي مفاتيح API، أو ملفات `.env`، أو مستندات قانونية، أو سجلات مستخدمين، أو قواعد SQLite، أو مجموعات Qdrant، أو ملفات OCR، أو أوزان النماذج، أو الكود الخاص بالمنصة. استخدمي بيانات خيالية أو مجهولة الهوية عند إعداد عروض عامة.
 
-## Disclaimer
+## English summary
 
-Muhakem is a research and software prototype. Its outputs are not a substitute for advice from a qualified lawyer and should be reviewed against the applicable legislation and official sources.
+Muhakem is an Arabic-first legal-AI workspace for legal consultation, contract drafting, defense-memo generation, document review, legal references, and usage analytics. This public repository is a presentation-only showcase; the full source code and private data are intentionally excluded.
+
+## تنبيه قانوني
+
+مُحكِّم نموذج بحثي وبرمجي. مخرجاته لا تُعد بديلًا عن استشارة محامٍ مؤهل، ويجب مراجعتها مقابل التشريعات والمصادر الرسمية السارية.
