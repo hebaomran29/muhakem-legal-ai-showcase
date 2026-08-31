@@ -3,52 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="مُحكِّم — منصة عربية للذكاء الاصطناعي القانوني" />
-  <title>مُحكِّم | الذكاء الاصطناعي القانوني</title>
+  <meta name="theme-color" content="#102f38" />
+  <meta name="description" content="Muhakem — Arabic-first legal intelligence for research, drafting, defense memoranda, and document review." />
+  <title>Muhakem | مُحكِّم — Arabic Legal Intelligence</title>
   <link rel="icon" href="./assets/favicon.svg" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="brand"><span class="mark">م</span><span>مُحكِّم</span></div>
-    <a class="nav-link" href="#demo">استكشف الفكرة</a>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Muhakem home"><span class="mark">م</span><span><b>مُحكِّم</b><small>Muhakem Legal AI</small></span></a>
+    <nav><a href="#workflows">المسارات</a><a href="#screens">لقطات من التطبيق</a><a href="#architecture">البنية</a><a href="#about">About</a></nav>
+    <a class="nav-cta" href="./docs/Muhakem_Project_Summary.pdf" target="_blank" rel="noreferrer">Project Summary ↗</a>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="top">
+    <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">ذكاء قانوني باللغة العربية</p>
-        <h1>مساعد قانوني عربي<br /><span>يفهم السياق ويُظهر المصدر.</span></h1>
-        <p class="lead">مُحكِّم يجمع البحث القانوني، وإنشاء العقود، وإعداد مذكرات الدفاع، ومراجعة المستندات في مساحة عمل واحدة مصممة للمحترفين القانونيين.</p>
-        <div class="actions"><a class="button primary" href="#demo">شاهد العرض</a><a class="button secondary" href="#architecture">كيف يعمل؟</a></div>
+        <p class="eyebrow">ARABIC-FIRST · EGYPTIAN LEGAL WORKFLOWS</p>
+        <h1>ذكاء قانوني<br /><em>يفهم السياق ويُظهر المصدر.</em></h1>
+        <p class="lead">مُحكِّم مساحة عمل قانونية تجمع البحث والاستشارة، إنشاء العقود، إعداد مذكرات الدفاع، ومراجعة المستندات في تجربة واحدة قابلة للمراجعة.</p>
+        <div class="actions"><a class="button primary" href="#screens">استكشف العرض</a><a class="button secondary" href="#architecture">كيف يعمل؟ <span>↙</span></a></div>
+        <div class="trust-row"><span><i></i> Source-aware</span><span><i></i> Arabic-first</span><span><i></i> Human-reviewed</span></div>
       </div>
-      <div class="hero-card">
-        <div class="card-top"><span class="status-dot"></span><span>مساحة عمل قانونية</span><span class="arabic">Legal workspace</span></div>
-        <div class="answer"><span class="quote">“</span><p>إجابة قانونية منظمة، مدعومة بالنصوص المسترجعة، مع إمكانية متابعة الحوار.</p></div>
-        <div class="source-row"><span>المصادر القانونية</span><span class="source-pill">3 مراجع</span></div>
-        <div class="source-line"></div><div class="source-line short"></div>
-      </div>
-    </section>
-
-    <section id="demo" class="section">
-      <p class="eyebrow">مسارات المنصة</p>
-      <h2>من السؤال إلى المستند</h2>
-      <div class="grid four">
-        <article class="feature"><div class="icon">01</div><h3>استشارة قانونية</h3><p>حوار عربي مستمر مع استرجاع للمصادر القانونية ذات الصلة.</p></article>
-        <article class="feature"><div class="icon">02</div><h3>إنشاء العقود</h3><p>صياغة منظمة مع تعديل وإضافة وحذف البنود من خلال المساعد.</p></article>
-        <article class="feature"><div class="icon">03</div><h3>مذكرة دفاع</h3><p>تحويل الوقائع والأدلة والدفوع إلى مذكرة واضحة قابلة للمراجعة.</p></article>
-        <article class="feature"><div class="icon">04</div><h3>مراجعة العقد</h3><p>استخراج البنود وتحليلها وإظهار المراجع ومؤشرات الثقة.</p></article>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <img src="./assets/muhakkim_final.png" alt="Muhakem logo" />
+        <div class="floating-note note-top"><strong>4</strong><span>specialized workflows</span></div>
+        <div class="floating-note note-bottom"><strong>RAG</strong><span>retrieval-grounded answers</span></div>
       </div>
     </section>
 
-    <section id="architecture" class="section architecture">
-      <div><p class="eyebrow">البنية البحثية</p><h2>مصمم للخصوصية والمرونة</h2><p>يفصل مُحكِّم بين الاسترجاع، والتوليد، ومعالجة المستندات، وتجربة المستخدم. لذلك يمكن تشغيله في وضع Online أو Hybrid أو Local دون إعادة تصميم المنتج.</p></div>
-      <div class="pipeline"><span>واجهة React</span><b>←</b><span>FastAPI</span><b>←</b><span>RAG + LLM</span><b>←</b><span>مخرج موثق</span></div>
+    <section class="intro-band"><div class="shell intro-grid"><p class="section-kicker">THE IDEA</p><p class="intro-text">Built for legal professionals who need faster access to Egyptian legal knowledge without losing the ability to inspect, correct, and own the final reasoning.</p></div></section>
+
+    <section id="workflows" class="section shell">
+      <div class="section-head"><div><p class="eyebrow">PRODUCT WORKFLOWS</p><h2>من السؤال إلى المستند.</h2></div><p>Four focused paths, one coherent legal workspace.</p></div>
+      <div class="workflow-grid">
+        <article class="workflow"><span class="number">01</span><h3>Legal consultation</h3><p>أسئلة قانونية باللغة العربية مع إجابات منظمة ومراجع قانونية مرتبطة بالسياق.</p><span class="tag">Research · RAG</span></article>
+        <article class="workflow featured"><span class="number">02</span><h3>Contract generation</h3><p>صياغة العقود مع إمكانية إضافة البنود وتعديلها وحذفها بندًا بندًا.</p><span class="tag">Drafting · Editable</span></article>
+        <article class="workflow"><span class="number">03</span><h3>Defense memoranda</h3><p>تحويل الوقائع والأدلة والدفوع إلى مذكرة دفاع منظمة وقابلة للمراجعة.</p><span class="tag">Classification · Validation</span></article>
+        <article class="workflow"><span class="number">04</span><h3>Contract review</h3><p>استخراج البنود وتحليل المخاطر وإظهار الأساس القانوني ومؤشرات الثقة.</p><span class="tag">OCR · Clause analysis</span></article>
+      </div>
     </section>
 
-    <section class="metrics"><div><strong>4</strong><span>مسارات قانونية</span></div><div><strong>Arabic-first</strong><span>تجربة مصممة للعربية</span></div><div><strong>Traceable</strong><span>مراجع وتحليلات استخدام</span></div></section>
+    <section id="screens" class="section shell screens-section">
+      <div class="section-head"><div><p class="eyebrow">PRODUCT IN ACTION</p><h2>لقطات من تجربة الاستخدام.</h2></div><p>Captured from the project prototype. Examples are presented for demonstration only.</p></div>
+      <div class="screens-grid">
+        <figure class="screen-card large"><img src="./assets/screenshots/consultation.png" alt="Legal consultation interface" loading="lazy" /><figcaption><span>01</span><div><b>Legal consultation</b><small>Source-aware Arabic research</small></div></figcaption></figure>
+        <figure class="screen-card"><img src="./assets/screenshots/contract-generation.png" alt="Contract generation interface" loading="lazy" /><figcaption><span>02</span><div><b>Contract generation</b><small>Structured drafting workflow</small></div></figcaption></figure>
+        <figure class="screen-card"><img src="./assets/screenshots/defense-memo.png" alt="Defense memorandum interface" loading="lazy" /><figcaption><span>03</span><div><b>Defense memorandum</b><small>Facts → arguments → requests</small></div></figcaption></figure>
+        <figure class="screen-card wide"><img src="./assets/screenshots/contract-review.png" alt="Contract review interface" loading="lazy" /><figcaption><span>04</span><div><b>Contract review</b><small>Clause-level analysis and review signals</small></div></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="architecture" class="architecture-section"><div class="shell architecture-grid"><div><p class="eyebrow">RESEARCH ARCHITECTURE</p><h2>Grounded by retrieval.<br /><em>Reviewed by people.</em></h2><p class="muted">The system separates routing, retrieval, generation, document processing, and validation. This makes the experience adaptable across online, hybrid, and local deployment modes.</p></div><div class="stack"><div class="stack-item"><b>01</b><span>React / Vite workspace</span></div><div class="stack-item"><b>02</b><span>FastAPI orchestration layer</span></div><div class="stack-item"><b>03</b><span>Qdrant hybrid retrieval + legal metadata</span></div><div class="stack-item"><b>04</b><span>LLM generation, validation, and export</span></div></div></div></section>
+
+    <section id="about" class="section shell about-section"><div class="about-card"><div><p class="eyebrow">ABOUT THE PROJECT</p><h2>A research prototype with a product mindset.</h2></div><p>Muhakem was developed as a graduation project by a five-member team within the Digilians 9 Months Diploma in AI and Data Science. It is designed to assist—not replace—qualified legal professionals.</p><a class="text-link" href="./README.md">Read the documentation ↗</a></div></section>
+
+    <section class="metrics shell"><div><strong>4</strong><span>legal workflows</span></div><div><strong>Arabic</strong><span>first interface</span></div><div><strong>RAG</strong><span>source-aware retrieval</span></div><div><strong>Human</strong><span>final review remains essential</span></div></section>
   </main>
 
-  <footer><span>© مُحكِّم للذكاء الاصطناعي القانوني</span><span>نموذج بحثي · نسخة عرض عامة</span></footer>
+  <footer class="shell"><div class="footer-brand"><span class="mark small">م</span><span><b>مُحكِّم</b><small>Muhakem Legal AI</small></span></div><p>Research prototype · Public showcase · August 2026</p><p>© Muhakem team</p></footer>
 </body>
 </html>

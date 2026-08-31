@@ -1,95 +1,119 @@
-# Muhakem Legal AI | مُحكِّم للذكاء الاصطناعي القانوني
+# Muhakem Legal AI · مُحكِّم
 
-[العربية](#العربية) · [English](#english) · [Live Demo](https://hebaomran29.github.io/muhakem-legal-ai-showcase/)
+<p align="center">
+  <strong>Arabic-first legal intelligence for Egyptian legal workflows.</strong><br />
+  <sub>Research · Consultation · Drafting · Review</sub>
+</p>
 
-<a id="العربية"></a>
+<p align="center">
+  <a href="https://hebaomran29.github.io/muhakem-legal-ai-showcase/">Live Demo</a> ·
+  <a href="./docs/Muhakem_Project_Summary.pdf">Project Summary</a> ·
+  <a href="https://github.com/hebaomran29/muhakem-legal-ai">Private source repository</a>
+</p>
+
+> **Public showcase only.** This repository presents the product concept, selected sanitized interface captures, and a static demonstration. The full application source, legal corpus, user data, credentials, model weights, and runtime databases remain private.
+
+---
 
 ## العربية
 
-**مُحكِّم** منصة عربية للذكاء الاصطناعي القانوني تساعد المتخصصين في البحث القانوني، وإنشاء العقود، وإعداد مذكرات الدفاع، ومراجعة المستندات القانونية مع إظهار المراجع ذات الصلة.
+### نبذة عن المشروع
 
-> هذا المستودع نسخة عرض عامة فقط. الكود الكامل للمنصة، والـBackend، وقاعدة البيانات القانونية، وبيانات المستخدمين، ومفاتيح الخدمات، وملفات النماذج محفوظة في مستودع خاص وغير موجودة هنا.
-
-### فكرة المشروع
-
-تجمع المنصة بين فهم اللغة العربية، والاسترجاع المعزز بالتوليد، ومعالجة المستندات، وتجربة عمل واحدة موجهة للمحامي والباحث القانوني. الهدف هو تقليل الوقت اللازم للوصول إلى المعلومة وصياغة المستند، مع الحفاظ على إمكانية مراجعة المصدر وعدم تقديم النص المولد باعتباره رأيًا قانونيًا نهائيًا.
+**مُحكِّم** منصة عربية للذكاء الاصطناعي القانوني، صُممت لمساعدة المحامي والباحث القانوني في الوصول إلى المعلومة، إعداد المستندات، ومراجعة البنود داخل مساحة عمل واحدة. يركز المشروع على السياق القانوني المصري وعلى جعل المخرجات قابلة للفحص والتعديل بدل عرض النص المولد باعتباره رأيًا قانونيًا نهائيًا.
 
 ### المسارات الرئيسية
 
-| المسار | الوظيفة |
+| المسار | ما الذي يقدمه؟ |
 | --- | --- |
-| الاستشارة القانونية | طرح أسئلة قانونية باللغة العربية والحصول على إجابة منظمة مبنية على النصوص المسترجعة. |
-| إنشاء العقود | إنشاء عقد منظم وإضافة البنود أو تعديلها أو حذفها من خلال مساعد تفاعلي. |
-| إعداد مذكرة دفاع | تحويل الوقائع والأدلة والدفوع والطلبات إلى مذكرة دفاع قابلة للمراجعة. |
-| مراجعة العقد | استخراج البنود وتحليلها وإظهار المراجع ومؤشرات الثقة والتنبيهات. |
-| مراقبة الاستخدام | تسجيل عدد التوكنز، وزمن الاستجابة، وتقسيم الاستخدام، والتكلفة السحابية التقديرية. |
+| الاستشارة القانونية | إجابات عربية منظمة مبنية على مواد قانونية مسترجعة ومراجع مرتبطة بالسياق. |
+| إنشاء العقود | صياغة عقد منظم مع إمكانية تعديل البنود أو إضافتها أو حذفها بندًا بندًا. |
+| مذكرات الدفاع | تحويل الوقائع والأدلة والدفوع إلى مذكرة دفاع قابلة للمراجعة. |
+| مراجعة العقود | استخراج البنود وتحليلها وإظهار إشارات المخاطر والثقة والأساس القانوني. |
+| تحليلات الاستخدام | تتبع التوكنز، زمن الاستجابة، وعدد العمليات للمقارنة بين التشغيل المحلي والسحابي. |
 
-### العرض المباشر
+### لقطات من التطبيق
 
-يمكن فتح [صفحة الـDemo العامة](https://hebaomran29.github.io/muhakem-legal-ai-showcase/) مباشرة. الصفحة ثابتة وتستخدم أمثلة خيالية، ولا تتصل بقاعدة بيانات أو نموذج ذكاء اصطناعي أو مستندات مستخدمين.
+<p align="center">
+  <img src="./assets/screenshots/consultation.png" alt="واجهة الاستشارة القانونية" width="49%" />
+  <img src="./assets/screenshots/contract-generation.png" alt="واجهة إنشاء العقود" width="49%" />
+</p>
+<p align="center">
+  <img src="./assets/screenshots/defense-memo.png" alt="واجهة مذكرة الدفاع" width="49%" />
+  <img src="./assets/screenshots/contract-review.png" alt="واجهة مراجعة العقد" width="49%" />
+</p>
 
-### إضافة لقطات شاشة حقيقية
+### البنية البحثية
 
-تُحفظ لقطات الشاشة العامة داخل مجلد `assets/screenshots/`، ثم تُضاف إلى هذه الصفحة أو إلى `index.html` بمسارات نسبية، مثل:
-
-```markdown
-![واجهة الاستشارة القانونية](./assets/screenshots/consultation.png)
-```
-
-قبل رفع أي صورة، يجب إخفاء أسماء المستخدمين، والمفاتيح، وعناوين البريد، وأرقام القضايا، والمستندات الحقيقية، وأي بيانات شخصية أو سرية. يمكن تصدير الصور من Canva بصيغة PNG، أو أخذ Screenshots من التطبيق نفسه، ثم رفع الملفات المنقحة إلى مجلد الصور فقط.
-
-### الجانب البحثي والهندسي
-
-يعتمد التصميم على فصل طبقات الواجهة، والـAPI، والاسترجاع، والتوليد، ومعالجة المستندات. ويسمح هذا الفصل بتشغيل المنصة في وضع Online أو Hybrid أو Local دون إعادة تصميم تجربة المستخدم.
+يفصل النظام بين الواجهة، طبقة الـAPI، التوجيه، الاسترجاع، التوليد، ومعالجة المستندات والتحقق. يدعم التصميم أوضاع التشغيل Online وHybrid وLocal بحسب متطلبات الخصوصية والبنية التحتية.
 
 ```text
-واجهة React
-    ↓
-FastAPI API
-    ↓
-استرجاع قانوني + نموذج لغوي + معالجة مستندات
-    ↓
-إجابة أو مستند منظم مع مراجع
+React / Vite workspace
+        ↓
+FastAPI orchestration layer
+        ↓
+Qdrant hybrid retrieval + legal metadata
+        ↓
+LLM generation + validation + document export
 ```
 
 ### الخصوصية والتنبيه القانوني
 
-لا ترفعي إلى هذا المستودع أي مفاتيح API، أو ملفات `.env`، أو مستندات قانونية، أو سجلات مستخدمين، أو قواعد SQLite، أو مجموعات Qdrant، أو ملفات OCR، أو أوزان النماذج، أو الكود الخاص بالمنصة. مُحكِّم نموذج بحثي وبرمجي، ومخرجاته لا تُعد بديلًا عن استشارة محامٍ مؤهل.
+هذا المستودع عام للعرض فقط. لا يجب رفع مفاتيح API، ملفات `.env`، مستندات قانونية حقيقية، سجلات مستخدمين، قواعد SQLite، بيانات Qdrant، ملفات OCR، أوزان نماذج، أو أي كود من المستودع الخاص. مُحكِّم نموذج بحثي وبرمجي، ومخرجاته لا تُعد بديلًا عن مراجعة محامٍ مؤهل أو الرجوع إلى المصادر الرسمية.
 
-<a id="english"></a>
+---
 
 ## English
 
-**Muhakem** is an Arabic-first legal-AI workspace for legal research, contract drafting, defense-memo generation, document review, legal references, and usage analytics.
+### Project overview
 
-> This repository is a public presentation showcase only. The full application source, backend, legal corpus, user data, credentials, and model files are intentionally excluded.
+**Muhakem** is an Arabic-first legal-AI workspace designed for Egyptian legal workflows. It brings legal research, consultation, contract drafting, defense-memorandum generation, and contract review into one source-aware experience. The product concept is built around professional review: users can inspect references, refine generated text, and retain responsibility for the final legal reasoning.
 
-### Product idea
-
-Muhakem combines Arabic language understanding, retrieval-augmented generation, document processing, and a focused legal workspace. Its goal is to reduce the time required to find relevant material and prepare structured documents while keeping source review visible.
-
-### Main workflows
+### Core workflows
 
 | Workflow | Purpose |
 | --- | --- |
-| Legal consultation | Arabic legal questions with answers grounded in retrieved legal material. |
-| Contract generation | Structured drafting with interactive clause addition, editing, and deletion. |
-| Defense memos | Organized memoranda built from facts, evidence, defenses, and requests. |
-| Contract review | Document extraction, clause analysis, legal references, and confidence indicators. |
-| Usage analytics | Token counts, latency, operation breakdown, and estimated cloud-cost comparison. |
+| Legal consultation | Structured Arabic answers grounded in retrieved legal material and contextual references. |
+| Contract generation | Editable drafting with clause-level addition, modification, and deletion. |
+| Defense memoranda | Case-fact structuring, legal retrieval, and reviewable memorandum generation. |
+| Contract review | OCR-assisted extraction, clause analysis, risk signals, and legal-basis display. |
+| Usage analytics | Token, latency, operation, and estimated cloud-cost tracking for evaluation. |
 
-### Live Demo
+### Product architecture
 
-Open the [public live Demo](https://hebaomran29.github.io/muhakem-legal-ai-showcase/). It is a static presentation page using fictional examples and does not connect to a production backend or user documents.
+Muhakem separates the user experience from routing, retrieval, generation, document processing, and validation. This makes the prototype adaptable to online, hybrid, or local deployment while keeping the product surface consistent.
 
-### Adding real screenshots
+| Layer | Role |
+| --- | --- |
+| Frontend | React/Vite workspace for the legal workflows and usage dashboard. |
+| Backend | FastAPI orchestration and session services. |
+| Retrieval | Qdrant hybrid search, embeddings, lexical retrieval, and legal metadata. |
+| Generation | Qwen/Ollama or compatible online model providers. |
+| Document processing | OCR, clause chunking, validation, and editable document export. |
 
-Place sanitized screenshots in `assets/screenshots/` and reference them with relative paths. Screenshots may be exported from Canva as PNG files or captured from the application. Remove all personal information, credentials, case numbers, private documents, and confidential interface details before publication.
+### Repository contents
 
-### Privacy and disclaimer
+| Path | Description |
+| --- | --- |
+| [`index.html`](./index.html) | Static public product showcase. |
+| [`style.css`](./style.css) | Responsive visual system for the showcase page. |
+| [`assets/screenshots/`](./assets/screenshots/) | Sanitized interface captures selected from the project demo recordings. |
+| [`docs/Muhakem_Project_Summary.pdf`](./docs/Muhakem_Project_Summary.pdf) | Four-page project summary covering the required submission sections. |
+| [`assets/favicon.svg`](./assets/favicon.svg) | Public brand mark. |
 
-Never commit API keys, `.env` files, legal documents, user records, SQLite databases, Qdrant data, OCR caches, model weights, or private source code. Muhakem is a research and software prototype and is not a substitute for advice from a qualified lawyer.
+### Run locally
 
-## Private source repository
+The showcase is a static site and requires no backend or API key. Open `index.html` directly in a browser, or serve the repository with any static HTTP server. The live version is published through GitHub Pages:
 
-The complete implementation is maintained separately in a private repository while the project is under development and evaluation.
+**[hebaomran29.github.io/muhakem-legal-ai-showcase](https://hebaomran29.github.io/muhakem-legal-ai-showcase/)**
+
+### Team
+
+Muhakem was developed as a graduation project by **Heba Reda Mohamed Omran, Manal Gamil Hassan Alaaeldin, Omnia Mahfouz Abdellatif Mostafa, Nehal Hammam Hassan Abdelhamed, and Mariam Magdy Abdo Mohamed Elatbany**, under the supervision of **Prof. Ghazal Abdelaty Fahmy**, within the Digilians 9 Months Diploma in AI and Data Science.
+
+### Disclaimer
+
+Muhakem is a research and software prototype. It is not a substitute for advice from a qualified lawyer. Generated content must be checked against applicable legislation, official sources, and the facts of the individual matter.
+
+---
+
+<p align="center"><sub>© Muhakem team · Public showcase · August 2026</sub></p>
