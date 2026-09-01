@@ -31,7 +31,17 @@
 | مراجعة العقود | استخراج البنود وتحليلها وإظهار إشارات المخاطر والثقة والأساس القانوني. |
 | تحليلات الاستخدام | تتبع التوكنز، زمن الاستجابة، وعدد العمليات للمقارنة بين التشغيل المحلي والسحابي. |
 
-### لقطات من التطبيق
+### فيديوهات ولقطات من التطبيق
+
+تتضمن صفحة الـDemo فيديوهات قصيرة حقيقية لمسارات الاستشارة، إنشاء العقود، مذكرات الدفاع، ومراجعة العقود. تم استخدام `preload="metadata"` وposter لكل فيديو حتى لا يتم تحميل المقاطع كاملة عند فتح الصفحة.
+
+| المسار | الفيديو |
+| --- | --- |
+| الاستشارة القانونية | [`consultation.mp4`](./assets/screenshots/consultation.mp4) |
+| إنشاء العقود | [`contract-generation.mp4`](./assets/screenshots/contract-generation.mp4) |
+| مذكرة الدفاع | [`defense-memo.mp4`](./assets/screenshots/defense-memo.mp4) |
+| مراجعة العقد وOCR | [`contract-review.mp4`](./assets/screenshots/contract-review.mp4) |
+
 
 <p align="center">
   <img src="./assets/screenshots/consultation.png" alt="واجهة الاستشارة القانونية" width="49%" />
@@ -96,9 +106,9 @@ Muhakem separates the user experience from routing, retrieval, generation, docum
 | --- | --- |
 | [`index.html`](./index.html) | Static public product showcase. |
 | [`style.css`](./style.css) | Responsive visual system for the showcase page. |
-| [`assets/screenshots/`](./assets/screenshots/) | Sanitized interface captures selected from the project demo recordings. |
+| [`assets/screenshots/`](./assets/screenshots/) | Sanitized interface captures and product-demo videos. |
 | [`docs/Muhakem_Project_Summary.pdf`](./docs/Muhakem_Project_Summary.pdf) | Four-page project summary covering the required submission sections. |
-| [`assets/favicon.svg`](./assets/favicon.svg) | Public brand mark. |
+| [`assets/favicon.png`](./assets/favicon.png) | Transparent public brand mark. |
 
 ### Run locally
 
